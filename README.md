@@ -1,6 +1,6 @@
 # Ansible Role: Java
 
-[![CI](https://github.com/shaneholloman-org/ansible-role-java/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman-org/ansible-role-java/actions/workflows/ci.yml)
+[![CI](https://github.com/shaneholloman/ansible-role-java/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman/ansible-role-java/actions/workflows/ci.yml)
 
 Installs Java for RedHat/CentOS and Debian/Ubuntu linux servers.
 
@@ -49,7 +49,7 @@ For Ubuntu < 16.04:
     - hosts: server
       tasks:
         - name: installing repo for Java 8 in Ubuntu
-  	      apt_repository: repo='ppa:openjdk-r/ppa'
+          apt_repository: repo='ppa:openjdk-r/ppa'
     
     - hosts: server
       roles:
@@ -65,4 +65,3 @@ MIT / BSD
 ## Author Information
 
 This role was created in 2023
-
