@@ -33,7 +33,7 @@ None.
         - role: shaneholloman.java
           become: yes
 
-## Example Playbook (install OpenJDK 8)
+## Example Playbook (using custom package)
 
 For RHEL / CentOS:
 
@@ -44,13 +44,13 @@ For RHEL / CentOS:
           java_packages:
             - java-1.8.0-openjdk
 
-For Ubuntu < 16.04:
+For Ubuntu < 20.04:
 
     - hosts: server
       tasks:
         - name: installing repo for Java 8 in Ubuntu
           apt_repository: repo='ppa:openjdk-r/ppa'
-    
+
     - hosts: server
       roles:
         - role: shaneholloman.java
