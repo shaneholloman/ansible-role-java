@@ -1,0 +1,5 @@
+---
+- name: Ensure Java is installed.
+  ansible.builtin.package:
+    name: "{{ java_packages }}"
+    state: present

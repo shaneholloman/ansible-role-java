@@ -29,15 +29,15 @@
 
 # Setup/install tasks.
 - name: Include RedHat setup tasks
-  ansible.builtin.include_tasks: setup-redhat.yml
+  ansible.builtin.include_tasks: setup-RedHat.yml
   when: ansible_os_family == 'RedHat'
 
 - name: Include Debian setup tasks
-  ansible.builtin.include_tasks: setup-debian.yml
+  ansible.builtin.include_tasks: setup-Debian.yml
   when: ansible_os_family == 'Debian'
 
 - name: Include FreeBSD setup tasks
-  ansible.builtin.include_tasks: setup-freebsd.yml
+  ansible.builtin.include_tasks: setup-FreeBSD.yml
   when: ansible_os_family == 'FreeBSD'
 # Environment setup.
 - name: Set JAVA_HOME if configured.

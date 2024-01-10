@@ -49,7 +49,7 @@ For Ubuntu < 20.04:
     - hosts: server
       tasks:
         - name: installing repo for Java 8 in Ubuntu
-          apt_repository: repo='ppa:openjdk-r/ppa'
+          ansible.builtin.apt_repository: repo='ppa:openjdk-r/ppa'
 
     - hosts: server
       roles:
