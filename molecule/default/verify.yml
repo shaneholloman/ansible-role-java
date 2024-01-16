@@ -2,4 +2,17 @@
 - name: Verify
   hosts: all
   gather_facts: false
-  tasks: []
+  tasks:
+    - name: Check if Java command is available
+      command: which java
+      register: java_command
+      failed_when: java_command.rc != 0
+
+    - name: Check Java version
+      command: java -version
+      register: java_version
+      ignore_errors: true
+
+    - name: Print Java version
+      debug:
+        var: java_version.stderr_lines
