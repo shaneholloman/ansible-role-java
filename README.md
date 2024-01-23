@@ -1,4 +1,4 @@
-# Ansible Role: Java
+# Ansible Role: `java`
 
 [![CI](https://github.com/shaneholloman/ansible-role-java/actions/workflows/ci.yml/badge.svg)](https://github.com/shaneholloman/ansible-role-java/actions/workflows/ci.yml)
 
@@ -70,7 +70,7 @@ For Ubuntu < 20.04:
 
 ## License
 
-MIT / BSD
+Unlicense
 
 ## Author Information
 
