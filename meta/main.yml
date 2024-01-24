@@ -1,13 +1,12 @@
 ---
-dependencies: []
-
 galaxy_info:
   role_name: java
   author: shaneholloman
   description: Java for Linux
   company: "shaneholloman"
   license: "license (Unlicense)"
-  min_ansible_version: "2.10"
+  min_ansible_version: "2.12"
+
   platforms:
     - name: Fedora
       versions:
@@ -31,6 +30,7 @@ galaxy_info:
     - name: FreeBSD
       versions:
         - "10.2"
+
   galaxy_tags:
     - development
     - system
@@ -39,3 +39,5 @@ galaxy_info:
     - jdk
     - openjdk
     - oracle
+
+dependencies: []
